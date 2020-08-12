@@ -1,12 +1,19 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import { MaterialCommunityIcons } from '@expo/vector-icons';
 
 export default function Nav() {
   return (
     <View style={styles.container}>
-      <Text>100</Text>
-      <Text>200</Text>
-      <Text>300</Text>
+      <View>
+        <MaterialCommunityIcons name="menu" size={23} />
+      </View>
+      <View>
+        <MaterialCommunityIcons name="home-outline" size={23} />
+      </View>
+      <View>
+        <MaterialCommunityIcons name="magnify" size={23} />
+      </View>
     </View>
   );
 }
