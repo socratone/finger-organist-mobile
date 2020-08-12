@@ -2,16 +2,19 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 
+import DropDown from './dropDown';
+
 export default function Nav() {
   return (
     <View style={styles.container}>
-      <View>
+      <View style={styles.icon}>
         <MaterialCommunityIcons name="menu" size={23} />
+        <DropDown />
       </View>
-      <View>
+      <View style={styles.icon}>
         <MaterialCommunityIcons name="home-outline" size={23} />
       </View>
-      <View>
+      <View style={styles.icon}>
         <MaterialCommunityIcons name="magnify" size={23} />
       </View>
     </View>
@@ -26,5 +29,8 @@ const styles = StyleSheet.create({
     justifyContent: 'space-evenly',
     height: 50,
     width: '100%',
+  },
+  icon: {
+    // flex: 1,
   },
 });
