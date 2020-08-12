@@ -15,7 +15,6 @@ export default function Home() {
 
 const styles = StyleSheet.create({
   container: {
-    // backgroundColor: 'wheat',
-    // width: '100%',
+    padding: 10,
   },
 });
